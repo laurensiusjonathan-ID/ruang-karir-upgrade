@@ -44,7 +44,7 @@ const FinalCTASection = () => {
 
           {/* Main CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
-            <Button variant="primary" size="lg" className="w-full sm:w-auto group">
+            <Button variant="primary" size="lg" className="w-full sm:w-auto group" >
               Lihat Semua Produk Premium
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </Button>

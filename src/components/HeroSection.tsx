@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import { FaInstagram, FaTiktok, FaLinkedin, FaThreads } from "react-icons/fa6";
 
 const HeroSection = () => {
   return (
@@ -13,14 +14,14 @@ const HeroSection = () => {
             <img 
               src="/lovable-uploads/22bfbbbf-7fbd-45d8-bf0b-58e564d02536.png" 
               alt="Ruang Karir Logo" 
-              className="w-24 h-24 mx-auto mb-6"
+              className="w-48 h-48 mx-auto mb-6"
             />
           </div>
 
           {/* Main Headline */}
           <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
             Dari Komunitas Gratis{" "}
-            <span className="text-primary">800+ Anggota</span>, Sekarang Saatnya Bantu Kamu{" "}
+            <span className="text-primary">750+ Anggota</span>, Sekarang Saatnya Bantu Kamu{" "}
             <span className="text-secondary">Upgrade Karier</span> Lebih Cepat{" "}
             <span className="text-3xl md:text-5xl">🚀</span>
           </h1>
@@ -37,17 +38,31 @@ const HeroSection = () => {
           {/* Subheadline */}
           <p className="text-lg md:text-xl text-muted-foreground mb-12 max-w-3xl mx-auto leading-relaxed">
             Aku <strong className="text-foreground">Dhanes</strong>, founder Ruang Karir – komunitas self-help & jobseeker{" "}
-            <span className="text-primary font-semibold">GRATIS</span> yang bantu ratusan orang level up skill dan dapat kerja.
+            <span className="text-primary font-semibold">GRATIS</span> yang sudah bantu ratusan orang level up skill dan dapat kerja.
+            <br />
+            <br />
+            Berpengalaman 5+ tahun di dunia HR dan merekrut 1000+ orang, aku pernah bekerja di perusahaan internasional di bidang AI dan saat ini berkarier di creative agency Singapore.
+            Pengalaman ini bikin aku paham tren industri global dan strategi kerja yang dibutuhkan untuk bersaing.
+            <br />
             <br />
             Sekarang hadir dengan tools & mentoring{" "}
             <span className="text-secondary font-semibold">premium</span> biar kamu bisa sampai ke tujuan lebih cepat.
           </p>
 
+          {/* Social Media Icons */}
+          <div className="flex justify-center gap-6 mb-8 text-secondary">
+            <a href="https://www.threads.com/@kerjabarengdhanes" target="_blank"><FaThreads className="w-6 h-6 hover:opacity-80" /></a>
+            <a href="https://www.instagram.com/kerjabarengdhanes" target="_blank"><FaInstagram className="w-6 h-6 hover:opacity-80" /></a>
+            <a href="https://www.tiktok.com/@kerjabarengdhanes" target="_blank"><FaTiktok className="w-6 h-6 hover:opacity-80" /></a>
+            <a href="https://www.linkedin.com/in/dhaneswaraintan/" target="_blank"><FaLinkedin className="w-6 h-6 hover:opacity-80" /></a>
+          </div>
+
+
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <Button variant="primary" size="lg" className="w-full sm:w-auto">
+            {/* <Button variant="primary" size="lg" className="w-full sm:w-auto">
               Lihat Semua Produk Premium
-            </Button>
+            </Button> */}
             <Button variant="secondary" size="lg" className="w-full sm:w-auto">
               Gabung Komunitas Gratis
             </Button>

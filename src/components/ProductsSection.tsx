@@ -7,37 +7,74 @@ const ProductsSection = () => {
       icon: <FileText className="w-8 h-8" />,
       emoji: "📝",
       name: "CVMate",
-      benefit: "CV ATS-friendly + cover letter auto-lirik HR",
-      color: "text-primary"
+      benefit: "Asisten AI yang siap bantu kamu bikin CV profesional dalam hitungan menit!",
+      color: "text-primary",
+      image: "/products/cvmate.jpg",
+      link: "https://s.id/CVMate"
     },
     {
       icon: <Mic className="w-8 h-8" />,
       emoji: "🎤", 
       name: "InterviewMate",
-      benefit: "Latihan interview + jawaban non-template",
-      color: "text-secondary"
+      benefit: "Asisten AI yang siap temenin kamu latihan interview realtime dengan Voice Mode dan feedback sesuai job inceran!",
+      color: "text-secondary",
+      image: "/products/interviewMate.png",
+      link: "https://s.id/InterviewMate"
     },
     {
-      icon: <Map className="w-8 h-8" />,
-      emoji: "🗺",
-      name: "Career Mapping Guide",
-      benefit: "Temukan arah karier & skill yang tepat",
-      color: "text-primary"
-    },
-    {
-      icon: <Package className="w-8 h-8" />,
-      emoji: "📦",
-      name: "Job Hunter Kit",
-      benefit: "Semua alat persiapan kerja dalam 1 paket hemat",
-      color: "text-secondary"
+      icon: <Mic className="w-8 h-8" />,
+      emoji: "🎤", 
+      name: "LinkMate",
+      benefit: "Asisten AI yang siap optimize profile LinkedInmu jadi magnet HR dan temukan peluang karir lebih di LinkedIn",
+      color: "text-secondary",
+      image: "/products/linkmate.png",
+      link: "https://s.id/iMovU"
     },
     {
       icon: <Clock className="w-8 h-8" />,
       emoji: "⏳",
       name: "3 Days Career Clarity",
       benefit: "Mentoring intensif + roadmap karier + dummy project",
-      color: "text-primary"
-    }
+      color: "text-primary",
+      image: "/products/3-days-career-clarity.png",
+      link: "https://s.id/YO3Gj"
+    },   
+    {
+      icon: <Mic className="w-8 h-8" />,
+      emoji: "🎤", 
+      name: "Bedah CV",
+      benefit: "Bedah CV-mu bareng HR Experienced",
+      color: "text-secondary",
+      image: "/products/bedah-cv.png",
+      link: "https://s.id/USFWf"
+    },
+    {
+      icon: <Package className="w-8 h-8" />,
+      emoji: "📦",
+      name: "Job Hunter Kit",
+      benefit: "Semua alat persiapan kerja dalam 1 paket hemat",
+      color: "text-secondary",
+      image: "/products/job-hunter-kit.png",
+      link: "https://s.id/jzf0J"
+    },
+    {
+      icon: <Package className="w-8 h-8" />,
+      emoji: "📦",
+      name: "Job Hunter 101",
+      benefit: "Webbook hacks dan tips kerja buat Freshgraduates",
+      color: "text-secondary",
+      image: "/products/webbook.jpg",
+      link: "https://s.id/tr4gN"
+    },
+    {
+      icon: <Map className="w-8 h-8" />,
+      emoji: "🗺",
+      name: "Career Mapping Guide",
+      benefit: "Temukan arah karier & skill yang tepat",
+      color: "text-primary",
+      image: "/products/career-mapping-guide.png",
+      link: "https://s.id/CareerFinder"
+    }    
   ];
 
   return (
@@ -59,11 +96,8 @@ const ProductsSection = () => {
             {products.map((product, index) => (
               <div key={index} className="bg-background rounded-2xl p-8 shadow-card hover-lift transition-smooth group">
                 {/* Icon & Emoji */}
-                <div className="flex items-center justify-between mb-6">
-                  <div className={`p-3 rounded-full bg-muted ${product.color}`}>
-                    {product.icon}
-                  </div>
-                  <span className="text-4xl">{product.emoji}</span>
+                <div className="flex items-center justify-between mb-6">                  
+                    <img src={product.image} alt={product.name} className="w-36 h-36" />
                 </div>
 
                 {/* Product Name */}
@@ -77,11 +111,12 @@ const ProductsSection = () => {
                 </p>
 
                 {/* CTA Button */}
-                <Button 
+                <Button asChild 
                   variant="outline" 
                   className="w-full group-hover:border-primary group-hover:text-primary transition-smooth"
-                >
-                  Lihat Detail
+                ><a href={product.link} target="_blank" rel="noopener noreferrer">
+                    Lihat Detail
+                  </a>
                 </Button>
               </div>
             ))}
@@ -95,11 +130,11 @@ const ProductsSection = () => {
           </div>
 
           {/* View All CTA */}
-          <div className="text-center">
+          {/* <div className="text-center">
             <Button variant="primary" size="lg">
               Lihat Semua Produk Premium
             </Button>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>
