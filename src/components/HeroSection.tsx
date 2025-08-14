@@ -20,7 +20,7 @@ const HeroSection = () => {
           {/* Main Headline */}
           <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
             Dari Komunitas Gratis{" "}
-            <span className="text-primary">750+ Anggota</span>, Sekarang Saatnya Bantu Kamu{" "}
+            <span className="text-primary">800+ Anggota</span>, Sekarang Saatnya Bantu Kamu{" "}
             <span className="text-secondary">Upgrade Karier</span> Lebih Cepat{" "}
             <span className="text-3xl md:text-5xl">🚀</span>
           </h1>
