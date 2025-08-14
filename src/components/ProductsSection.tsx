@@ -7,7 +7,7 @@ const ProductsSection = () => {
       icon: <FileText className="w-8 h-8" />,
       emoji: "📝",
       name: "CVMate",
-      benefit: "Asisten AI yang siap bantu kamu bikin CV profesional dalam hitungan menit!",
+      benefit: "Asisten AI yang siap biknin dan reviewin CVmu dalam hitungan menit sesuai job inceran + pasti ATS!",
       color: "text-primary",
       image: "/products/cvmate.jpg",
       link: "https://s.id/CVMate"
@@ -18,7 +18,7 @@ const ProductsSection = () => {
       name: "InterviewMate",
       benefit: "Asisten AI yang siap temenin kamu latihan interview realtime dengan Voice Mode dan feedback sesuai job inceran!",
       color: "text-secondary",
-      image: "/products/interviewMate.png",
+      image: "/products/interviewmate.png",
       link: "https://s.id/InterviewMate"
     },
     {
