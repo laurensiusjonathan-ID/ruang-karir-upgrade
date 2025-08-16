@@ -11,6 +11,10 @@ const FinalCTASection = () => {
 
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-4xl mx-auto text-center">
+          <h5 className="text-2xl md:text-4xl font-bold mb-8 leading-tight">
+            ✨ Siap <span className="text-primary">Naik Level</span> Kariermu? 
+          </h5>
+
           {/* Title */}
           <h2 className="text-3xl md:text-6xl font-bold mb-8 leading-tight">
             Mulai Langkah Pertama Menuju{" "}
@@ -44,12 +48,16 @@ const FinalCTASection = () => {
 
           {/* Main CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
-            <Button variant="primary" size="lg" className="w-full sm:w-auto group" >
-              Lihat Semua Produk Premium
-              <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+            <Button asChild variant="primary" size="lg" className="w-full sm:w-auto group">
+              <a href="#products">
+                💡 Temukan Solusi Cepat untuk Kariermu
+                <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+              </a>
             </Button>
             <Button variant="secondary" size="lg" className="w-full sm:w-auto group">
-              Gabung Komunitas Gratis
+              <a href="https://s.id/RuangKarir" target="_blank" rel="noopener noreferrer">
+                Gabung Komunitas Gratis
+              </a>
               <Users className="w-5 h-5" />
             </Button>
           </div>

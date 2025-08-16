@@ -17,7 +17,7 @@ const StorySection = () => {
     {
       icon: <Award className="w-8 h-8" />,
       number: "100%",
-      label: "Career Mentoring Free",
+      label: "100% Pendampingan Karir di komunitas",
       color: "text-primary"
     },
     {

@@ -49,6 +49,11 @@ const HeroSection = () => {
             <span className="text-secondary font-semibold">premium</span> biar kamu bisa sampai ke tujuan lebih cepat.
           </p>
 
+          <p className="text-lg md:text-xl text-muted-foreground mb-5 max-w-3xl mx-auto leading-relaxed">
+            Aku sering bagi tips karier & rahasia lolos kerja di sini <br />
+            Yuk connect & follow biar nggak ketinggalan insight terbaru 🚀
+          </p>
+
           {/* Social Media Icons */}
           <div className="flex justify-center gap-6 mb-8 text-secondary">
             <a href="https://www.threads.com/@kerjabarengdhanes" target="_blank"><FaThreads className="w-6 h-6 hover:opacity-80" /></a>
@@ -57,16 +62,15 @@ const HeroSection = () => {
             <a href="https://www.linkedin.com/in/dhaneswaraintan/" target="_blank"><FaLinkedin className="w-6 h-6 hover:opacity-80" /></a>
           </div>
 
-
           {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            {/* <Button variant="primary" size="lg" className="w-full sm:w-auto">
+          {/* <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+            <Button variant="primary" size="lg" className="w-full sm:w-auto">
               Lihat Semua Produk Premium
-            </Button> */}
+            </Button>
             <Button variant="secondary" size="lg" className="w-full sm:w-auto">
               Gabung Komunitas Gratis
             </Button>
-          </div>
+          </div> */}
         </div>
       </div>
 

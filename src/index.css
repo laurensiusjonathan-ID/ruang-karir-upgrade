@@ -7,6 +7,14 @@ Brand colors: #FFD500 (kuning) and #7FE1F3 (biru muda)
 All colors MUST be HSL.
 */
 
+.hide-scrollbar {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE 10+ */
+}
+.hide-scrollbar::-webkit-scrollbar {
+  display: none; /* Chrome/Safari/Webkit */
+}
+
 @layer base {
   :root {
     --background: 0 0% 100%;

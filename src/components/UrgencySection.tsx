@@ -18,10 +18,10 @@ const UrgencySection = () => {
               <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Gift className="w-8 h-8 text-primary" />
               </div>
-              <h3 className="text-xl font-bold mb-4">🎁 Bonus Minggu Ini</h3>
+              <h3 className="text-xl font-bold mb-4">🎁 Akses Template Job Tracker</h3>
               <p className="text-muted-foreground">
-                <strong className="text-primary">Template CV ATS GRATIS</strong><br />
-                untuk pembelian produk apapun
+                <strong className="text-primary">Pantau progress lamaran kerja </strong>
+                 kamu dengan template tracker interaktif
               </p>
             </div>
 

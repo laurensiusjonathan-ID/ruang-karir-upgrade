@@ -66,7 +66,14 @@ export default function TestimonialSection() {
   if (images.length === 0) return null;
 
   return (
-    <section className="py-20">
+    <section className="pb-20">
+      {/* Title and Description */}
+      <div className="container mx-auto px-4">
+        <div className="text-center mb-10">
+          <h2 className="text-3xl md:text-5xl font-bold mb-3">Yuk lihat cerita sukses member Ruang Karir </h2>
+          <p className="text-muted-foreground md:text-lg">Dari nggak pede sampai diterima kerja, semua kisahnya ada di sini :</p>
+        </div>
+      </div>
       <div className="container mx-auto px-4">
         {/* <div className="text-center mb-10">
           <h2 className="text-3xl md:text-5xl font-bold mb-3">Apa Kata Mereka?</h2>
@@ -122,8 +129,14 @@ export default function TestimonialSection() {
       <br />
       {/* Main CTA Buttons */}
       <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
-        <Button variant="secondary" size="lg" className="w-full sm:w-auto group">
-          Gabung Komunitas Gratis
+        <Button
+          variant="secondary"
+          size="lg"
+          className="w-full max-w-xs sm:w-auto sm:max-w-none group text-base sm:text-lg py-6"
+        >
+          <a href="https://s.id/RuangKarir" target="_blank" rel="noopener noreferrer">
+            Gabung Komunitas Gratis
+          </a>
           <Users className="w-5 h-5" />
         </Button>
       </div>
