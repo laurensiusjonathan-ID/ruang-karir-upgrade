@@ -12,7 +12,7 @@ const FinalCTASection = () => {
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-4xl mx-auto text-center">
           <h5 className="text-2xl md:text-4xl font-bold mb-8 leading-tight">
-            ✨ Siap <span className="text-primary">Naik Level</span> Kariermu? 
+            ✨ Siap <span className="text-red-500">Naik Level</span> Kariermu? 
           </h5>
 
           {/* Title */}
@@ -50,7 +50,7 @@ const FinalCTASection = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
             <Button asChild variant="primary" size="lg" className="w-full sm:w-auto group">
               <a href="#products">
-                💡 Temukan Solusi Cepat untuk Kariermu
+                Temukan Solusi Cepat untuk Kariermu
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </a>
             </Button>
