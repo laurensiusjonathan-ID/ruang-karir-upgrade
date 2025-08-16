@@ -181,7 +181,7 @@ const ProductsSection = () => {
 
             {/* Career Map */}
             <div>
-              <h2 className="text-3xl font-bold mb-6 text-center">Career Map</h2>
+              <h2 className="text-3xl font-bold mb-6 text-center">Konsultasi Personal with Dhanes (HR)</h2>
               <DragScroll>
                 {personalConsul.map((product, index) => (
                   <div className="min-w-[280px] max-w-[340px] flex-shrink-0 lg:min-w-0 lg:max-w-none" key={index}>
@@ -193,7 +193,7 @@ const ProductsSection = () => {
 
             {/* Bundle */}
             <div>
-              <h2 className="text-3xl font-bold mb-6 text-center">Bundle</h2>
+              <h2 className="text-3xl font-bold mb-6 text-center">Tools Karir</h2>
               <DragScroll>
                 {toolsCareer.map((product, index) => (
                   <div className="min-w-[280px] max-w-[340px] flex-shrink-0 lg:min-w-0 lg:max-w-none" key={index}>
@@ -224,7 +224,7 @@ const ProductsSection = () => {
 };
 
 const ProductCard = ({ product }: { product: Product }) => (
-  <div className="bg-background rounded-2xl p-8 shadow-card hover-lift transition-smooth group relative">
+  <div className="bg-background rounded-2xl p-0 shadow-card hover-lift transition-smooth group relative">
     {/* Tags */}
     {product.tags && product.tags.length > 0 && (
       <div className="absolute top-4 right-4 flex flex-col items-end gap-2 z-10">
@@ -238,21 +238,27 @@ const ProductCard = ({ product }: { product: Product }) => (
         ))}
       </div>
     )}
-    <div className="flex items-center justify-center mb-6">
-      <img src={product.image} alt={product.name} className="w-36 h-36 object-contain" />
+    <div className="w-full aspect-square rounded-2xl overflow-hidden mb-6">
+      <img
+        src={product.image}
+        alt={product.name}
+        className="w-full h-full object-cover"
+      />
     </div>
-    <h3 className="text-2xl font-bold mb-4 group-hover:text-primary transition-smooth">
-      {product.name}
-    </h3>
-    <p className="text-muted-foreground mb-6 leading-relaxed">
-      {product.benefit}
-    </p>
-    <Button asChild variant="outline"
-      className="w-full group-hover:border-primary group-hover:text-primary transition-smooth">
-      <a href={product.link} target="_blank" rel="noopener noreferrer">
-        Lihat Detail
-      </a>
-    </Button>
+    <div className="px-8 pb-8">
+      <h3 className="text-2xl font-bold mb-4 group-hover:text-primary transition-smooth">
+        {product.name}
+      </h3>
+      <p className="text-muted-foreground mb-6 leading-relaxed">
+        {product.benefit}
+      </p>
+      <Button asChild variant="outline"
+        className="w-full group-hover:border-primary group-hover:text-primary transition-smooth">
+        <a href={product.link} target="_blank" rel="noopener noreferrer">
+          Lihat Detail
+        </a>
+      </Button>
+    </div>
   </div>
 );
 
